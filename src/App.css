@@ -1,0 +1,7 @@
+body {
+    background-color: #001c3a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}

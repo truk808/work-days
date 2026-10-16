@@ -1,0 +1,80 @@
+.calendarContainer {
+    width: 320px;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.header button {
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+.weekDaysGrid,
+.daysGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    text-align: center;
+}
+
+.weekDayCell {
+    font-weight: 600;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.dayCell {
+    padding: 10px 0;
+    border: 1px solid #f0f0f0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.emptyCell {
+    padding: 10px 0;
+}
+
+.isWork {
+    background-color: #12592b;
+    border-color: #ceead6;
+    font-weight: 500;
+    color: #e8e8e8;
+}
+
+.isRest {
+    background-color: #f1f3f4;
+    border-color: #e8eaed;
+}
+
+.dayCell {
+    position: relative; /* Обязательно для позиционирования точки внутри ячейки */
+    padding: 10px 0;
+    border: 1px solid #f0f0f0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Синий кружочек в правом верхнем углу */
+.todayDot {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 6px;
+    height: 6px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
